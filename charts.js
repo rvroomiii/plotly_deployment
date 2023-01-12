@@ -101,7 +101,7 @@ function buildCharts(sample) {
 
     // Deliverable 1: 9. Create the layout for the bar chart. 
     var barLayout = {
-      title: 'Top 10 Bacteria Cultures per Sample',
+      title: 'Top 10 Bacteria Cultures Found',
       margin: {
         t: 30, l: 150
       
@@ -136,7 +136,7 @@ function buildCharts(sample) {
       type: "indicator",
       mode: "gauge+number",
       value: washFrequency,
-      title: { text: "<b>Bellybutton Washing Frequency</b> <br>Scrubs per Week", font: { size: 24 } },
+      title: { text: "<b>Belly Button Washing Frequency</b> <br>Scrubs per Week", font: { size: 24 } },
       gauge: {
         axis: { range: [null, 10], tickcolor: "black" },
         bar: { color: "black" },
