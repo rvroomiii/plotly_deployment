@@ -93,7 +93,10 @@ function buildCharts(sample) {
       x: sample_values.slice(0, 10).reverse(),
       y: yticks,
       orientation: 'h',
-      text: otu_labels.slice(0, 10).reverse()
+      text: otu_labels.slice(0, 10).reverse(),
+      marker:{
+        color:"green"
+      }
   }];
 
     // Deliverable 1: 9. Create the layout for the bar chart. 
@@ -101,7 +104,7 @@ function buildCharts(sample) {
       title: 'Top 10 Bacteria Cultures per Sample',
       margin: {
         t: 30, l: 150
-
+      
       },
 
     };
@@ -117,7 +120,7 @@ function buildCharts(sample) {
       marker: {
         color: otu_ids,
         size: sample_values,
-        colorscale: "Earth"
+        colorscale: "Picnic"
       }
     };
     // Deliverable 2: 2. Create the layout for the bubble chart.
@@ -135,11 +138,11 @@ function buildCharts(sample) {
       value: washFrequency,
       title: { text: "<b>Bellybutton Washing Frequency</b> <br>Scrubs per Week", font: { size: 24 } },
       gauge: {
-        axis: { range: [null, 10], tickcolor: "darkblue" },
+        axis: { range: [null, 10], tickcolor: "black" },
         bar: { color: "black" },
         bgcolor: "white",
-        borderwidth: 2,
-        bordercolor: "gray",
+        borderwidth: 1,
+        bordercolor: "black",
         steps: [
           { range: [0, 2], color: "red" },
           { range: [2, 4], color: "orange" },
